@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="Assets/Logo/HexPost.png" />
+    <link rel="stylesheet" href="Assets/style.css" />
+    <title>Forums</title>
+  </head>
+  <body>
+    <div class="nav-list mobile" id="nav-list-mobile">
+      <a href="#"><div class="nav-items active" id="nav-items">Home</div></a>
+      <a href=""><div class="nav-items" id="nav-items">About Us</div></a>
+      <a href=""><div class="nav-items" id="nav-items">Take a Tour</div></a>
+    </div>
+    <nav class="navbar" id="navbar">
+      <a class="nav-brand" id="nav-brand" href="">
+        <div class="brand-logo" id="brand-logo">
+          <img src="Assets/Logo/HexPost.png" alt="Logo" />
+        </div>
+        <div class="brand-name mobile-not" id="brand-name">HexPost</div>
+      </a>
+      <input type="text" name="search" class="search" placeholder="Search" />
+      <div class="nav-list mobile-not" id="nav-list">
+        <a href="#"><div class="nav-items active" id="nav-items">Home</div></a>
+        <a href=""><div class="nav-items" id="nav-items">About Us</div></a>
+        <a href=""><div class="nav-items" id="nav-items">Take a Tour</div></a>
+      </div>
+      <a class="nav-icon mobile" id="nav-icon" onclick="navbarExpand()">
+        <i class="bi bi-list"></i>
+      </a>
+      <a href=""
+        ><div class="nav-icon profile-icon" id="nav-items">
+          <i style="display: flex" class="bi bi-person-circle"></i></div
+      ></a>
+    </nav>
+    <div class="home" id="home">
+      <div class="home-wrap">
+        <div class="home-div create">
+          <h3>Create Post</h3>
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Post something..."
+            class="search"
+          />
+          <button type="button">Post</button>
+        </div>
+        <div class="filter home-div" id="filter">
+          <button type="button"><i class="bi bi-star-fill"></i> New</button>
+          <button type="button"><i class="bi bi-award-fill"></i> Top</button>
+          <div class="spacer"></div>
+          <button
+            type="button"
+            class="hide"
+            id="dark"
+            onclick="switchTheme('dark')"
+          >
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+          <button type="button" id="light" onclick="switchTheme('light')">
+            <i class="bi bi-sun-fill"></i>
+          </button>
+        </div>
+        <div class="posts" id="posts">
+          <div class="post home-div">
+            <div class="votes">
+              <i class="bi bi-arrow-up-square-fill"></i>
+              <p>123</p>
+              <i class="bi bi-arrow-down-square-fill"></i>
+            </div>
+            <div class="post-wrap">
+              <h1>Title of Post</h1>
+              <h3>username</h3>
+            </div>
+          </div>
+          <div class="post home-div">
+            <div class="votes">
+              <i class="bi bi-arrow-up-square-fill"></i>
+              <p>123</p>
+              <i class="bi bi-arrow-down-square-fill"></i>
+            </div>
+            <div class="post-wrap">
+              <h1>Title of Post</h1>
+              <h3>username</h3>
+            </div>
+          </div>
+          <div class="post home-div">
+            <div class="votes">
+              <i class="bi bi-arrow-up-square-fill"></i>
+              <p>123</p>
+              <i class="bi bi-arrow-down-square-fill"></i>
+            </div>
+            <div class="post-wrap">
+              <h1>Title of Post</h1>
+              <h3>username</h3>
+            </div>
+          </div>
+          <div class="post home-div">
+            <div class="votes">
+              <i class="bi bi-arrow-up-square-fill"></i>
+              <p>123</p>
+              <i class="bi bi-arrow-down-square-fill"></i>
+            </div>
+            <div class="post-wrap">
+              <h1>Title of Post</h1>
+              <h3>username</h3>
+            </div>
+          </div>
+          <div class="post home-div">
+            <div class="votes">
+              <i class="bi bi-arrow-up-square-fill"></i>
+              <p>123</p>
+              <i class="bi bi-arrow-down-square-fill"></i>
+            </div>
+            <div class="post-wrap">
+              <h1>Title of Post</h1>
+              <h3>username</h3>
+            </div>
+          </div>
+          <div class="post home-div">
+            <div class="votes">
+              <i class="bi bi-arrow-up-square-fill"></i>
+              <p>123</p>
+              <i class="bi bi-arrow-down-square-fill"></i>
+            </div>
+            <div class="post-wrap">
+              <h1>Title of Post</h1>
+              <h3>username</h3>
+            </div>
+          </div>
+          <div class="post home-div">
+            <div class="votes">
+              <i class="bi bi-arrow-up-square-fill"></i>
+              <p>123</p>
+              <i class="bi bi-arrow-down-square-fill"></i>
+            </div>
+            <div class="post-wrap">
+              <h1>Title of Post</h1>
+              <h3>username</h3>
+            </div>
+          </div>
+          <div class="post home-div">
+            <div class="votes">
+              <i class="bi bi-arrow-up-square-fill"></i>
+              <p>123</p>
+              <i class="bi bi-arrow-down-square-fill"></i>
+            </div>
+            <div class="post-wrap">
+              <h1>Title of Post</h1>
+              <h3>username</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="communities mobile-not home-div" id="communities">
+        <h1>Communities</h1>
+        <div class="community">
+          <img src="Assets/Communities/JavaScript.png" alt="" />
+          <h3>JavaScript</h3>
+        </div>
+        <div class="community">
+          <img src="Assets/Communities/Coding.jpg" alt="" />
+          <h3>Coding</h3>
+        </div>
+        <div class="community">
+          <img src="Assets/Communities/python.png" alt="" />
+          <h3>Python</h3>
+        </div>
+        <div class="community">
+          <img src="Assets/Communities/React.png" alt="" />
+          <h3>React</h3>
+        </div>
+      </div>
+    </div>
+    <script src="Assets/script.js"></script>
+  </body>
+</html>
