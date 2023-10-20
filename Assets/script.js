@@ -2,13 +2,6 @@ var navbar = document.getElementById("navbar");
 function navbarExpand() {
   document.getElementById("nav-list-mobile").classList.toggle("expand");
 }
-document.addEventListener("scroll", function () {
-  if (window.scrollY < 46) {
-    navbar.classList.remove("scrolled");
-  } else {
-    navbar.classList.add("scrolled");
-  }
-});
 const html = document.querySelector("html");
 html.dataset.theme = `theme-dark`;
 const dark = document.getElementById("dark");
