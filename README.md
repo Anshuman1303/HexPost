@@ -1,1 +1,1 @@
-Website created for GDSC submission round
+Website created for GDSC submission round.
